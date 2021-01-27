@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
 
 app.get('/teapot', (req, res) => {
 	res.status(418)
+	res.set('X-Teapot-Stuff', "You've been tea-potted")
 	res.send("I'm a little teapot")
 })
 
